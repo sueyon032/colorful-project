@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: aquamarine;
+    height: 44px;
+}
+
+.show-image{
+    top: 44px;
+}
+
+.show-image img{
+    width: 100%;
+}
