@@ -63,6 +63,9 @@ footer {
         margin-bottom: 40px;
         font-weight: var(--font-bold);
     }
+    .more {
+        font-size: 16px;
+    }
     .circle {
         margin: 0 10px;
     }
