@@ -4,8 +4,20 @@ const navListUl1 = document.getElementsByClassName("nav-list")[1];
 
 // Event Handling
 nav_toggle0.onclick = () => {
-    navListUl0.classList.toggle("show-menu");
+    if(navListUl1.classList.contains("show-mode")) {
+        navListUl1.classList.remove("show-mode");
+        navListUl0.classList.add("show-menu");
+    }
+    else {
+        navListUl0.classList.toggle("show-menu");
+    }
 }
 nav_toggle1.onclick = () => {
-    navListUl1.classList.toggle("show-mode");
+    if(navListUl0.classList.contains("show-menu")) {
+        navListUl0.classList.remove("show-menu");
+        navListUl1.classList.add("show-mode");
+    }
+    else {
+        navListUl1.classList.toggle("show-mode");
+    }
 }
