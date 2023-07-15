@@ -78,13 +78,4 @@ nav {
     .show-mode {
         height: 132px;
     }
-    main {
-        top: 44px;
-    }
-    .show-image{
-        top: 44px;
-    }  
-    .show-image img{
-        width: 100%;
-    }
 }
