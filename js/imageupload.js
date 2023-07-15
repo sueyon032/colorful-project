@@ -24,4 +24,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     reader.readAsDataURL(file);
   });
-});z
+});

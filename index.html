@@ -33,11 +33,19 @@
             <div class="nav-toggle" id="nav_toggle1">
                 <span style="font-size: 16px;">모드</span><i class="bi bi-chevron-compact-down"></i>
             </div>
-            <a href="" class="nav-image">
-                <i class="bi bi-images"></i>
-            </a>           
+            <a href="" class="nav-image" id="uploadButton">
+                <i class="bi bi-images" class="imageicon"></i>
+            </a>  
+            <input type="file" id="uploadInput" accept="image" style="display: none;">         
+            <div class="show-image" id="showimage"></div>
         </nav>
     </header>
+    <main>
+        <input type="file" id="uploadInput" accept="image" style="display: none;">
+        <!--폴더와 연결-->
+        <div class="show-image" id="showimage"></div>
+        <!--이미지 화면에 나타나게함-->
+    </main>
 </body>
     <script src="js/nav.js"></script>
 </html>
