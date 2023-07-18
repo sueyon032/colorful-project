@@ -18,8 +18,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
       showimage.innerHTML = '';
       showimage.appendChild(image);
-
-      imageicon.style.display = 'none';
     };
 
     reader.readAsDataURL(file);
