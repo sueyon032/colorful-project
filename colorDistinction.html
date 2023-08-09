@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/0d77807ef9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="colorDistinction.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="nav.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav container">
+            <ul class="nav-list first">
+                <li class="nav-item"><a href="" class="nav-link">홈</a></li>
+                <li class="nav-item"><a href="" class="nav-link">색 카테고리</a></li>
+                <li class="nav-item"><a href="" class="nav-link">이미지 색 추출</a></li>
+                <li class="nav-item"><a href="" class="nav-link">색 구별 AI</a></li>
+            </ul>
+
+            <div class="nav-toggle" id="nav_toggle0">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <ul class="nav-list second">
+                <li class="nav-item">
+                    <button class="nav-button" id="redLink">적색맹</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-button" id="greenLink">녹색맹</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-button" id="blueLink">청색맹</button>
+                </li>
+            </ul>
+
+
+            <div class="nav-toggle" id="nav_toggle1">
+                <span style="font-size: 16px;">모드</span><i class="bi bi-chevron-compact-down"></i>
+            </div>
+
+            <a href="#" class="nav-image" id="uploadButton">
+                <i class="bi bi-images" class="imageicon"></i>
+            </a>
+        </nav>
+    </header>
+    
+    <div class="video">
+        <video></video>
+    </div>
+    
+    <div class="menu">
+        <div class="menu-details">
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-palette"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-camera"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-image"></i></a></li>
+          </ul>
+        </div>
+    </div>
+</body>
+<script src="nav.js"></script>
+</html>

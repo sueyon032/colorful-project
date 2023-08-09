@@ -1,0 +1,81 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+:root {
+    --dark-gray: #4E4D4D;
+    --light-gray: #AAAAAA;
+    --lighter-gray: #EEEEEE;
+
+    --body-font: "Nanum Gothic";
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;   /* 16px */
+    --small-font-size: 0.8rem;
+    --smaller-font-size: 0.6rem;
+    --font-regular: 400;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+}
+body {
+    font-family: var(--body-font);
+    font-weight: var(--font-regular);
+}
+header {
+    background-color: var(--dark-gray);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 7;
+}
+nav {
+    height: 44px;
+}
+
+@media screen and (min-width:0px) {
+    .nav.container {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;    /*수직정렬 - 가운데*/
+        color: #fff;
+        padding: 0 16px;
+    }
+    .nav-list {
+        position: absolute;
+        top: 44px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        overflow: hidden;
+        transition: 0.4s;
+        height: 0;
+    }
+    .nav-list.first {
+        background-color: var(--lighter-gray);
+    }
+    .nav-list.second {
+        background-color: var(--lighter-gray);
+    }
+    .nav-image {
+        color: #fff;
+    }
+    .nav-link {
+        display: block;
+    }
+    .nav-item {
+        padding: 0.8em 0;
+    }
+    .nav-item:hover {
+        background-color: var(--light-gray);
+    }
+    .nav-toggle {
+        font-size: var(--h3-font-size);
+    }
+    .show-menu {
+        height: 174px;
+    }
+    .show-mode {
+        height: 132px;
+    }
+}

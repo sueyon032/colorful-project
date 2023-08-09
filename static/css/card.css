@@ -89,4 +89,9 @@ body {
     .hidden-card {
         display: none;
     }
+    #color-picker-image {
+        width: 390px; /* 이미지의 너비를 부모 요소의 100%로 설정 */
+        max-width: 100%; /* 이미지의 최대 너비를 부모 요소의 100%로 설정 */
+        height: auto; /* 이미지의 높이는 자동으로 조절하여 가로세로 비율 유지 */
+    }
 }
