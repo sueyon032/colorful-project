@@ -76,6 +76,11 @@ nav {
         height: 174px;
     }
     .show-mode {
-        height: 132px;
+        height: 141px;
+    }
+    .nav-list .nav-item button {
+        background: transparent;
+        border: 0;
+        font-size: var(--font-regular);
     }
 }
