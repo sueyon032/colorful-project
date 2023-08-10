@@ -4,11 +4,11 @@ const modeGreen = document.getElementsByClassName("mode2")[0];
 const modeBlue = document.getElementsByClassName("mode3")[0];
 
 modeRed.onclick = () => {
-    video.src = "red.mp4";
+    video.src = "video/red.mp4";
 };
 modeGreen.onclick = () => {
-    video.src = "green.mp4";
+    video.src = "video/green.mp4";
 };
 modeBlue.onclick = () => {
-    video.src = "blue.mp4";
+    video.src = "video/blue.mp4";
 };
