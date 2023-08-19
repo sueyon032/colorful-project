@@ -79,7 +79,7 @@ li {
 .text-container {
   display: flex;
   align-items: flex-end;
-  margin: 15px;
+  margin: 15px  15px 0 15px;
 }
 .text {
   margin-right: 10px;
@@ -92,36 +92,15 @@ li {
   color: #777;
   text-decoration: underline;
 }
-
-/* .menu {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  padding: 8px;
+.category {
+  padding: 0 16px;
 }
-.menu-details ul li a {
-    color: #454545;
-    font-size: 30px;
+.category-details a img{
+  margin-top: 20px;
 }
-.menu-details ul {
-    display: flex;
-    justify-content: space-between;
+.category-details>img {
+  margin: 0;
 }
-.camera-icon {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 40px;
-  padding: 25px;
-  z-index: 20;
-  background-color: #fff;
-}
-.camera-icon > a {
-  color: #454545;
-}*/
 
 .bottom-line {
   width: 100%;
