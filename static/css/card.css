@@ -40,7 +40,7 @@ body {
     .color-box {
         width: 150px;
         height: 150px;
-        background-color: #3985FF;
+        background-color: #0000ff;
         border-radius: 10px;
         margin-right: 25px;
     }
@@ -73,7 +73,7 @@ body {
     .color-link-circle {
         width: 25px;
         height: 25px;
-        background-color: blue;
+        background-color: #0000ff;
         border-radius: 20px;
     }
     .range {
