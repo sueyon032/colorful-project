@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+   -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.slide {
+  margin-top: 33px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden; 
+  /* slide_button의 position absolute가 컨테이너 안쪽에서 top, left, right offset이 적용될 수 있도록 relative를 준다. (기본값이 static인데, static인 경우 그 상위 컨테이너로 나가면서 현재 코드에선 html을 기준으로 offset을 적용시키기 때문) */
+  position: relative;
+  /* size */
+  width: 330px;
+  height: 210px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slide_item {  
+  /* position - 버튼 클릭시 left offset값을 적용시키기 위해 */
+  position: relative;
+  /* flex item의 flex-shrink는 기본값이 1이므로 컨테이너 크기에 맞게 줄어드는데, 슬라이드를 구현할 것이므로 줄어들지 않도록 0을 준다. */
+  flex-shrink: 0;
+  transition: left 0.15s;
+  width: 330px;
+  height: 210px;
+  border-radius: 10px;
+}
+.slide_item i {
+  color: azure;
+}
+.slide_button {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* 버튼이 중앙에 위치하게 하기위해 계산 */
+  top: calc(50% - 16px);
+  /* size */
+  font-size: 30px;
+  cursor: pointer;
+}
+.slide_prev_button {
+  left: 15px;
+  color: #bbb;
+}
+.slide_next_button {
+  right: 15px;
+  color: #bbb;
+}
+/* 페이지네이션 스타일 */
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.slide_pagination {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 0;
+  /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slide_pagination > li {
+  /* 현재 슬라이드가 아닌 것은 투명도 부여 */
+  color: #aaa;
+  cursor: pointer;
+  font-size: 25px;
+}
+.slide_pagination > li.active {
+  /* 현재 슬라이드 색상은 투명도 없이 */
+  color: #fff;
+}
+
+.text-container {
+  display: flex;
+  align-items: flex-end;
+  margin: 15px;
+}
+.text {
+  margin-right: 10px;
+  font-weight: 800;
+  font-size: 24px;
+}
+.more {
+  align-self: flex-end;
+  font-size: 10px;
+  color: #777;
+  text-decoration: underline;
+}
+
+/* .menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 8px;
+}
+.menu-details ul li a {
+    color: #454545;
+    font-size: 30px;
+}
+.menu-details ul {
+    display: flex;
+    justify-content: space-between;
+}
+.camera-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  padding: 25px;
+  z-index: 20;
+  background-color: #fff;
+}
+.camera-icon > a {
+  color: #454545;
+}*/
+
+.bottom-line {
+  width: 100%;
+  height: 1.2px;
+  background-color: #AEAEAE;
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+} 
+
+.bottom-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-color: #f0f0f0; */
+  padding: 10px;
+}
+.bottom-menu-item {
+  position: relative; /* To contain the absolute-positioned icon */
+}
+.bottom-menu-item > a {
+  color: #454545;
+}
+.fa-solid.fa-camera {
+  font-size: 45px; 
+  color: #fff;
+}
+.fa-solid.fa-image,
+.fa-regular.fa-circle-user {
+  font-size: 32px;
+}
+.center {
+  padding: 20px;
+  border-radius: 50px;
+  background-color: #494949;
+}
