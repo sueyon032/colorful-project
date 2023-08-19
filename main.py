@@ -94,7 +94,7 @@ def get_hsv_data():
 
 
 if __name__ == "__main__":
-    image_path = "testImg.jpg"  # 클릭하려는 이미지 경로
+    image_path = "testImg10.jpg"  # 클릭하려는 이미지 경로
     image = cv2.imread(image_path)
     cv2.namedWindow("image")
     cv2.setMouseCallback("image", get_hsv)
